@@ -60,8 +60,8 @@ button:disabled{opacity:.35;cursor:not-allowed}
   const cells = [...$("pin").children], card = $("card"), msg = $("msg");
   let buf = "";
   let st = { used: 0, won: false };
-  try { st = JSON.parse(localStorage.getItem(KEY)) || st; } catch {}
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch {} };
+  try { localStorage.removeItem(KEY); } catch {}   // clear old saved state from earlier version
+  const save = () => {};                           // state lives in memory only: reload = fresh start
 
   const keys = [..."123456789", "C", "0", "OK"];
   keys.forEach(k => {
