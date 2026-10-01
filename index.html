@@ -9,12 +9,12 @@
 *{box-sizing:border-box;margin:0}
 body{min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 50% 0,#10204a,var(--bg) 60%);color:var(--tx);font-family:"Segoe UI",system-ui,monospace;padding:16px;overflow-x:hidden}
 body::before{content:"";position:fixed;inset:0;background:repeating-linear-gradient(0deg,#ffffff06 0 1px,transparent 1px 3px);pointer-events:none}
-main{width:min(420px,100%);text-align:center}
+main{width:min(520px,100%);text-align:center}
 h1{font-size:clamp(1.5rem,6vw,2.2rem);letter-spacing:.15em;color:var(--c);text-shadow:0 0 12px var(--c),0 0 32px var(--m)}
 .sub{margin:6px 0 22px;font-size:.8rem;letter-spacing:.3em;color:var(--m)}
 .card{border:1px solid #00f0ff55;border-radius:16px;padding:22px;background:#0a1226cc;box-shadow:0 0 30px #00f0ff22 inset,0 0 30px #ff2bd622}
-.pin{display:flex;gap:10px;justify-content:center;margin-bottom:16px}
-.pin span{width:58px;height:70px;display:grid;place-items:center;font-size:2rem;border:2px solid var(--c);border-radius:10px;background:#00f0ff0d;box-shadow:0 0 10px #00f0ff55}
+.pin{display:flex;gap:14px;justify-content:center;margin-bottom:16px}
+.pin span{width:min(80px,17vw);height:min(96px,21vw);display:grid;place-items:center;font-size:2.8rem;border:2px solid var(--c);border-radius:10px;background:#00f0ff0d;box-shadow:0 0 10px #00f0ff55}
 .pin span.f{background:#00f0ff22}
 .pad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}
 button{font:inherit;font-size:1.3rem;padding:14px 0;color:var(--tx);background:#0e1a3a;border:1px solid #00f0ff55;border-radius:10px;cursor:pointer;transition:.15s}
